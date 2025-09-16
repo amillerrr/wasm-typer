@@ -1,0 +1,21 @@
+# Compiled WebAssembly modules
+# These are generated from your .go files, so they don't belong in source control.
+*.wasm
+
+# Compiled Go executables
+# In case you use 'go build' on your server.go file.
+server
+
+# IDE and editor directories/files
+# These are specific to your personal setup.
+*.swp
+*~
+.#*
+
+# OS-specific files
+# These are created automatically by macOS and Windows.
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

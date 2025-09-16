@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Go Wasm Keystroke Interceptor</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; }
+        textarea { width: 500px; height: 200px; font-size: 1.2em; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Compose Your "Email"</h2>
+        <p>Start typing in the box below. Any key press will do.</p>
+        <textarea id="emailBox" placeholder="Type anything..."></textarea>
+    </div>
+
+    <script src="wasm_exec.js"></script>
+    <script>
+        // Create a new Go instance
+        const go = new Go();
+        // Fetch and run the Wasm file
+        WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+        });
+    </script>
+</body>
+</html>
