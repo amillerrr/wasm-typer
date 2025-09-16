@@ -25,8 +25,8 @@ You must have the Go compiler installed on your system. You can download it from
 
 1.  **Clone the Repository**
     ```sh
-    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-    cd your-repository-name
+    git clone [https://github.com/amillerrr/wasm-typer.git](https://github.com/amillerrr/wasm-typer.git)
+    cd wasm-typer
     ```
 
 2.  **Copy the Wasm JavaScript File**
@@ -34,6 +34,7 @@ You must have the Go compiler installed on your system. You can download it from
     ```sh
     cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
     ```
+    NOTE: Some installations will use $(go env GOROOT)/lib/wasm/wasm_exec.js
 
 3.  **Compile the WebAssembly Module**
     This command compiles the `main.go` file into a `.wasm` binary that the browser can execute:
@@ -66,11 +67,11 @@ To change the phrase that gets typed out, simply edit the `targetPhrase` constan
 
 ```go
 // in main.go
-const targetPhrase = "Your new custom phrase goes here! 🎉"
+const targetPhrase = "Your new custom phrase goes here!"
 ```
 After changing the phrase, you must re-compile the Wasm module (Step 3) and restart the server (Step 4).
 
-### Optional: Using a Custom Domain (e.g., `tester.ink`)
+### Optional: Using a Custom Domain (e.g., `tester.link`)
 
 If you want to access your local server using a custom domain instead of `localhost:8080`, follow these steps.
 
@@ -80,7 +81,7 @@ If you want to access your local server using a custom domain instead of `localh
     -   **Windows:** `C:\Windows\System32\drivers\etc\hosts`
 
     ```
-    127.0.0.1   tester.ink
+    127.0.0.1   tester.link
     ```
 
 2.  **Modify the Server Port**
@@ -97,7 +98,7 @@ If you want to access your local server using a custom domain instead of `localh
     ```
 
 4.  **Access the New Domain**
-    You can now access your application by visiting **[http://tester.ink](http://tester.ink)** in your browser.
+    You can now access your application by visiting **[http://tester.link](http://tester.link)** in your browser.
 
 ***
 
