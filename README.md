@@ -76,7 +76,7 @@ After changing the phrase, you must re-compile the Wasm module (Step 3) and rest
 If you want to access your local server using a custom domain instead of `localhost:8080`, follow these steps.
 
 1.  **Edit Your `hosts` File**
-    You need administrator/root privileges for this step. Add the following line to your system's `hosts` file to tell your computer that `tester.ink` points to your local machine.
+    You need administrator/root privileges for this step. Add the following line to your system's `hosts` file to tell your computer that `tester.link` points to your local machine.
     -   **macOS/Linux:** `/etc/hosts`
     -   **Windows:** `C:\Windows\System32\drivers\etc\hosts`
 
