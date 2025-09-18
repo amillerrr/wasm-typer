@@ -1,6 +1,6 @@
 # Go WebAssembly Keystroke Interceptor ⌨️
 
-This project is a simple web application demonstrating how to use Go compiled to WebAssembly (Wasm) to manipulate the DOM in a web browser. It features a text box that intercepts all keyboard input and types out a predetermined phrase, one character per key press.
+This tool was initially designed for video engineers working on a film/TV production to eliminate the pressure on actors to hit each key perfectly on scenes requiring them to use a keyboard. The project is a simple web application demonstrating how to use Go compiled to WebAssembly (Wasm) to manipulate the DOM in a web browser. It features a text box that intercepts all keyboard input and types out a predetermined phrase, one character per key press. This can be placed within any existing UI. 
 
 The application is served by a minimal, self-contained web server also written in Go.
 
@@ -13,7 +13,7 @@ The application is served by a minimal, self-contained web server also written i
 
 ***
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to get the project running on your local machine.
 
@@ -57,7 +57,7 @@ You must have the Go compiler installed on your system. You can download it from
 
 ***
 
-## 🔧 Customization
+## Customization
 
 You can easily customize the application's behavior.
 
@@ -102,7 +102,7 @@ If you want to access your local server using a custom domain instead of `localh
 
 ***
 
-## 📂 Project File Structure
+## Project File Structure
 
 ```
 .
